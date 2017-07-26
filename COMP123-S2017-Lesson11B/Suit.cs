@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 /* Name: Bal Krishna Dhakal
  * Date: July 25, 2017
- * Description: This is demo for Lesson 11
- * Version: 0.1 - Created the Project
+ * Description: This is Suit Enum
+ * Version: 0.1 - Created the Suit Enum
  */
 namespace COMP123_S2017_Lesson11B
 {
-    class Program
+    public enum Suit
     {
-        static void Main(string[] args)
-        {
-        }
+        Clubs,
+        Diamonds,
+        Hearts,
+        Spades
     }
 }
