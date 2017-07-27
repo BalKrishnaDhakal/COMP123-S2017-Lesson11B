@@ -5,7 +5,7 @@ using System.Text;
 /* Name: Bal Krishna Dhakal
  * Date: July 25, 2017
  * Description: This is the Deck Class
- * Version: 0.4 - Refactaured the ToString Method
+ * Version: 0.5 Added Deal1 Method 
  */
 namespace COMP123_S2017_Lesson11B
 {
@@ -90,6 +90,16 @@ namespace COMP123_S2017_Lesson11B
                 //this[firstCard].Suit = tempCard.Suit;
 
             }
+        }
+        /// <summary>
+        /// This method return the top card to the deck
+        /// </summary>
+        /// <returns></returns>
+        public Card Deal1()
+        {
+            Card topCard = this[0];
+            this.RemoveAt(0);// this removes the top card from the deck
+            return topCard;
         }
     }
 }
