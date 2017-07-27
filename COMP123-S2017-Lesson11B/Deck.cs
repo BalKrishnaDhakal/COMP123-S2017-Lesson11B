@@ -5,7 +5,7 @@ using System.Text;
 /* Name: Bal Krishna Dhakal
  * Date: July 25, 2017
  * Description: This is the Deck Class
- * Version: 0.3 - Refactor the suffle method
+ * Version: 0.4 - Refactaured the ToString Method
  */
 namespace COMP123_S2017_Lesson11B
 {
@@ -37,7 +37,7 @@ namespace COMP123_S2017_Lesson11B
         /// This is the initialize method it sets values for private variables
         /// and public properties as well as other class objects.
         /// </summary>
-        private void _initialize()
+     protected override    void _initialize()
         {
             //initialize the pseudo-random number generator
             this._random = new Random();
@@ -60,6 +60,7 @@ namespace COMP123_S2017_Lesson11B
         public override string ToString()
         {
             string outputString = "";
+            outputString = "Deck Contains Number o"
             foreach(Card card in this)
             {
                 outputString += "The " + card.Face + " of " + card.Suit + "\n";
