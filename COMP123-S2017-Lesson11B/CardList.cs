@@ -22,10 +22,8 @@ namespace COMP123_S2017_Lesson11B
 
         }
         //PRIVATE METHODS
-        protected abstract void _initialize()
-        {
-
-        }
+        protected abstract void _initialize();
+       
         //PUBLIC METHODS
     }
 }

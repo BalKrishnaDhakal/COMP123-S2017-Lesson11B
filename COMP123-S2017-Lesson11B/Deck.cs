@@ -5,11 +5,11 @@ using System.Text;
 /* Name: Bal Krishna Dhakal
  * Date: July 25, 2017
  * Description: This is the Deck Class
- * Version: 0.5 Added Deal1 Method 
+ * Version: 0.6 Modified _initialize Method
  */
 namespace COMP123_S2017_Lesson11B
 {
-    public class Deck: List<Card>
+    public class Deck: CardList
     {
         //PRIVATE INSTANCE VARIABLES
         private Random _random;
@@ -37,7 +37,7 @@ namespace COMP123_S2017_Lesson11B
         /// This is the initialize method it sets values for private variables
         /// and public properties as well as other class objects.
         /// </summary>
-     protected override    void _initialize()
+     protected override  void _initialize()
         {
             //initialize the pseudo-random number generator
             this._random = new Random();
@@ -60,7 +60,7 @@ namespace COMP123_S2017_Lesson11B
         public override string ToString()
         {
             string outputString = "";
-            outputString = "Deck Contains Number o"
+            outputString = "Deck Contains Number o";
             foreach(Card card in this)
             {
                 outputString += "The " + card.Face + " of " + card.Suit + "\n";
@@ -99,6 +99,7 @@ namespace COMP123_S2017_Lesson11B
         {
             Card topCard = this[0];
             this.RemoveAt(0);// this removes the top card from the deck
+            Console.WriteLine("Deal 1 Card - Size of Deck: " + this.Count);
             return topCard;
         }
     }
