@@ -5,7 +5,7 @@ using System.Text;
 /*/* Name: Bal Krishna Dhakal
  * Date: July 25, 2017
  * Description: This is the Card Class
- * Version: 0.2 - Implemented the IClonable interface
+ * Version: 0.3 - Added the overwrite method
  */
 namespace COMP123_S2017_Lesson11B
 {
@@ -60,6 +60,16 @@ namespace COMP123_S2017_Lesson11B
         public object Clone()
         {
             return new Card(this.Face, this.Suit);
+        }
+        /// <summary>
+        /// This method  overwrites the first card with  the second card
+        /// </summary>
+        /// <param name="first"></param>
+        /// <param name="second"></param>
+        public static void Overwrite(Card first, Card second)
+        {
+            first.Face = second.Face;
+            first.Suit = second.Suit;
         }
     }
 }

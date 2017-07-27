@@ -5,7 +5,7 @@ using System.Text;
 /* Name: Bal Krishna Dhakal
  * Date: July 25, 2017
  * Description: This is the Deck Class
- * Version: 0.2 - Added the suffle method
+ * Version: 0.3 - Refactor the suffle method
  */
 namespace COMP123_S2017_Lesson11B
 {
@@ -78,13 +78,15 @@ namespace COMP123_S2017_Lesson11B
             Card tempCard;
             for(int card =0; card < this.Count; card++)
             {
-                firstCard = this.Random.Next(0, 52);
-                secondCard = this.Random.Next(0, 52);
+                firstCard = this.Random.Next(0, this.Count);
+                secondCard = this.Random.Next(0, this.Count);
                 tempCard = (Card)this[secondCard].Clone();
-                this[secondCard].Face = this[firstCard].Face;
-                this[secondCard].Suit = this[firstCard].Suit;
-                this[firstCard].Face = tempCard.Face;
-                this[firstCard].Suit = tempCard.Suit;
+                Card.Overwrite(this[secondCard], this[firstCard]);
+                Card.Overwrite(this[secondCard], this[firstCard]);
+                //this[secondCard].Face = this[firstCard].Face;
+                //this[secondCard].Suit = this[firstCard].Suit;
+                //this[firstCard].Face = tempCard.Face;
+                //this[firstCard].Suit = tempCard.Suit;
 
             }
         }
