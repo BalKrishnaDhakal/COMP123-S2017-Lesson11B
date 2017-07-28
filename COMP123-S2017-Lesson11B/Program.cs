@@ -27,9 +27,9 @@ namespace COMP123_S2017_Lesson11B
             //Console.WriteLine(hand.ToString());
             //Console.WriteLine();
             //Console.WriteLine(deck.ToString());
-           
+
             hand = deck.DealsFiveCards();
-             hand.HighestCardsInHand(hand);
+            hand.HighestCardsInHand(hand);
         }
     }
 }
