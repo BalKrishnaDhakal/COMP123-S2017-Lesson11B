@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 /* Name: Bal Krishna Dhakal
  * Date: July 27, 2017
  * Description: This is demo for Lesson 11
- * Version: 0.5 - DealsFiveCards  method is tested
+ * Version: 0.6 - ReadKey method is implemented 
  */
 namespace COMP123_S2017_Lesson11B
 {
@@ -30,6 +30,7 @@ namespace COMP123_S2017_Lesson11B
 
             hand = deck.DealsFiveCards();
             hand.HighestCardsInHand(hand);
+            Console.ReadKey();
         }
     }
 }
