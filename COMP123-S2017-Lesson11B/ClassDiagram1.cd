@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
   <Class Name="COMP123_S2017_Lesson11B.Card">
-    <Position X="5.25" Y="0.5" Width="1.5" />
+    <Position X="0.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAABAAAAAAACAAAAABAgAAAAAAAAAAAAAAAAAgBA=</HashCode>
       <FileName>Card.cs</FileName>
@@ -9,35 +9,42 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="COMP123_S2017_Lesson11B.Deck">
-    <Position X="8.75" Y="1.25" Width="3" />
+    <Position X="3.75" Y="0.5" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAAAEAAAAAAAAAAAABAAAAAAAAAAAEAE=</HashCode>
+      <HashCode>AAAAAAAAACAAAAAEAAAAAAQEAAAABAAAAAAAAAAAEAE=</HashCode>
       <FileName>Deck.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="COMP123_S2017_Lesson11B.CardList">
-    <Position X="2" Y="3.25" Width="1.5" />
+    <Position X="5" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>CardList.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="COMP123_S2017_Lesson11B.Hand">
-    <Position X="6.5" Y="4.25" Width="1.5" />
+    <Position X="2" Y="4.25" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAACAAAAAEAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Hand.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="COMP123_S2017_Lesson11B.Program">
+    <Position X="7.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Enum Name="COMP123_S2017_Lesson11B.Suit">
-    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Position X="9" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAQAAAEAAAAAAAAABAAAAAAAAAAAAAAAAAAAACA=</HashCode>
       <FileName>Suit.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="COMP123_S2017_Lesson11B.Face" Collapsed="true">
-    <Position X="3.25" Y="0.5" Width="1.5" />
+  <Enum Name="COMP123_S2017_Lesson11B.Face">
+    <Position X="7.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gAAAAAAAAAAggAAAEAAEAIAAAAAFBAAAAAgAAAgAAEE=</HashCode>
       <FileName>Face.cs</FileName>

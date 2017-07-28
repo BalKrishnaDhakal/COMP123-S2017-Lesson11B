@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 /* Name: Bal Krishna Dhakal
- * Date: July 25, 2017
+ * Date: July 27, 2017
  * Description: This is the Deck Class
  * Version: 0.7 DealsFiveCard method is Added
  */
@@ -100,6 +100,10 @@ namespace COMP123_S2017_Lesson11B
             Console.WriteLine("Deal 1 Card - Size of Deck: " + this.Count);
             return topCard;
         }
+        /// <summary>
+        /// This method returns the hand cards
+        /// </summary>
+        /// <returns></returns>
         public Hand DealsFiveCards()
         {
             Hand handCard = new Hand();
