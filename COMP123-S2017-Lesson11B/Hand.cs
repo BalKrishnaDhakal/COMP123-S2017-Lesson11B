@@ -15,21 +15,45 @@ namespace COMP123_S2017_Lesson11B
         // PUBLIC PROPERTIES
          // CONSTRUCTORS
            // PRIVATE METHODS
+           // PUBLIC METHOD
 
         protected override void _initialize()
         {
            //This Method is empty
         }
+       
         public override string ToString()
         {
             string outputString = "";
-            outputString += "Hand Contains Number of Card:" + this.Count + "\n";
-            outputString += "================================================";
+            outputString += " Number of Cards in Hand :" + this.Count + "\n";
+            outputString += "==========================================\n";
             foreach(Card card in this)
             {
-                outputString += "The" + card.Face + "of " + card.Suit + "\n";
+                outputString += "The " + card.Face + "of " + card.Suit + "\n";
             }
             return outputString;
         }
+        public void HighestCardsInHand(Hand hands)
+        {
+            var sortedResult = from myCard in hands orderby myCard.Face descending select myCard;
+            int maxface = 0;
+            int i = 0;
+            foreach (Card item in sortedResult)
+            {
+                if (i == 0)
+                {
+                    maxface = (int)item.Face;
+                }
+                else
+                {
+                    if ((int)item.Face < maxface) break;
+
+                }
+                Console.WriteLine("The Highest  Card in Hand is: " + item.Face + " of " + item.Suit);
+                i++;
+            }
+        }
+
     }
-}
+  }
+    

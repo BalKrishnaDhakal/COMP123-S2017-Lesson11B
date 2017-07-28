@@ -16,17 +16,17 @@ namespace COMP123_S2017_Lesson11B
         {
             Deck deck = new Deck();
             Hand hand = new Hand();
-            Console.WriteLine("Original Deck  Number of cards: " + deck.Count);
-            Console.WriteLine("===================================================");
+
             Console.WriteLine(deck.ToString());
             Console.WriteLine();
             deck.Shuffle();
-            Console.WriteLine("Shuffled Deck Number of Cards: " + deck.Count);
-            Console.WriteLine("====================================================");
+            Console.WriteLine("Shuffled");
             Console.WriteLine(deck.ToString());
+
             hand.Add(deck.Deal1());
             Console.WriteLine(hand.ToString());
             Console.WriteLine();
+            Console.WriteLine(deck.ToString());
 
         }
     }
